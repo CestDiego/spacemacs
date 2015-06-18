@@ -939,10 +939,11 @@ The body of the advice is in BODY."
   :variable hidden-mode-line-mode
   :group 'editing-basics
   (if hidden-mode-line-mode
-      (setq hide-mode-line mode-line-format
-            mode-line-format nil)
-    (setq mode-line-format hide-mode-line
-          hide-mode-line nil))
+      (progn (setq-local hide-mode-line mode-line-format)
+             (setq-local mode-line-format nil))
+    (progn
+      (setq-local mode-line-format hide-mode-line)
+      (setq-local hide-mode-line nil)))
   (force-mode-line-update)
   ;; Apparently force-mode-line-update is not always enough to
   ;; redisplay the mode-line
@@ -953,6 +954,9 @@ The body of the advice is in BODY."
      0 nil 'message
      (concat "Hidden Mode Line Mode enabled.  "
              "Use M-x hidden-mode-line-mode to make the mode-line appear."))))
+
+(define-globalized-minor-mode global-hidden-mode-line-mode hidden-mode-line-mode
+  hidden-mode-line-mode) ; Turn on function
 
 (spacemacs|advise-commands
  "indent" (yank yank-pop evil-paste-before evil-paste-after) after

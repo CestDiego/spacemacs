@@ -2847,7 +2847,9 @@ It is a string holding:
                   (powerline-render rhs))))
 
       (setq-default mode-line-format
-                    '("%e" (:eval (spacemacs/mode-line-prepare))))
+                    ;; '("%e" (:eval (spacemacs/mode-line-prepare))))
+                    '("%e" (:eval (when (powerline-selected-window-active)
+                                    (spacemacs/mode-line-prepare)))))
 
       (defun spacemacs//restore-powerline (buffer)
         "Restore the powerline in buffer"
