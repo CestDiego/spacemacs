@@ -73,8 +73,8 @@ between Vim and Emacs. The user can now choose his/her preferred editing
 style and enjoy all the Spacemacs features.
 
 Even better, it is possible to dynamically switch between the two
-styles _seamlessly_ which makes it possible for programmers with different
-styles to do seat pair programming using the _same_ editor.
+styles *seamlessly* which makes it possible for programmers with different
+styles to do seat pair programming using the *same* editor.
 
 Since switching between the two styles is so simple, Spacemacs is the perfect
 setup to learn the "other way" or even crazier, to get the best of both
@@ -205,7 +205,7 @@ For efficient searches we recommend to install `pt` [the platinum searcher][].
    mv .emacs.d .emacs.bak
    ```
 
-2. Clone this repository _with its submodules_:
+2. Clone this repository *with its submodules* :
 
    ```sh
    git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
@@ -261,7 +261,7 @@ version of `Spacemacs` is available.
 ![git-mod](doc/img/update-red.png)    | >= 5  releases behind
 
 **Note:**
-A feature allowing update by merely clicking on the indicator will be implemented _soon_!
+A feature allowing update by merely clicking on the indicator will be implemented *soon*!
 
 ** Rollback
 
@@ -338,7 +338,7 @@ dotspacemacs-configuration-layers '(auto-completion
 ```
 
 At anytime you can apply the changes made to the dotfile or layers
-_without restarting_ `Spacemacs` by pressing <kbd>SPC f e R</kbd>.
+*without restarting* `Spacemacs` by pressing <kbd>SPC f e R</kbd>.
 
 The [comments in this file][dotfile template] contain further information about
 how to customize `Spacemacs`. See the [dotfile configuration][dotfile] section of
@@ -422,7 +422,7 @@ Some quick `how-to's` are compiled in the [HOWTOs.org][] file.
 
 * Contributions
 
-`Spacemacs` needs _you_!
+`Spacemacs` needs *you*!
 
 We especially need to create more configuration layers that, for instance, bring
 support for new languages.
@@ -462,7 +462,7 @@ The version is displayed on the upper right corner of the loading screen.
 You may also just type <kbd>SPC f e v</kbd>.
 
 2. **What is the official pronunciation of Spacemacs ?**
-As it is written, that is _space_ then _macs_.
+As it is written, that is *space* then *macs*.
 
 3. **Why are packages installed with `package-install` automatically deleted by
 Spacemacs when it boots ?**
