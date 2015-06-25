@@ -1,6 +1,13 @@
 #+HTML: <a name="top"></a>
 
-[[https://gitter.im/syl20bnr/spacemacs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge][file:https://badges.gitter.im/Join%20Chat.svg]] [[https://travis-ci.org/syl20bnr/spacemacs][file:https://travis-ci.org/syl20bnr/spacemacs.svg]] [[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ESFVNPKP4Y742][file:https://img.shields.io/badge/Paypal-Buy%20a%20Drink-blue.svg]] [[http://www.twitter.com/spacemacs][Twitter]]
+#+ATTR_HTML: style="display: inline;"
+[[https://gitter.im/syl20bnr/spacemacs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge][file:https://badges.gitter.im/Join%20Chat.svg]]
+#+ATTR_HTML: style="display: inline;"
+[[https://travis-ci.org/syl20bnr/spacemacs][file:https://travis-ci.org/syl20bnr/spacemacs.svg]]
+#+ATTR_HTML: style="display: inline;"
+[[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ESFVNPKP4Y742][file:https://img.shields.io/badge/Paypal-Buy%20a%20Drink-blue.svg]]
+#+ATTR_HTML: style="display: inline;" alt="Twitter"
+[[http://www.twitter.com/spacemacs]]
 
 --------------
 
