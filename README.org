@@ -7,15 +7,13 @@
 #+BEGIN_HTML
 <p align="center"><img src="/doc/img/title2.png" alt="Spacemacs"/></p>
 <p align="center">
-<b><a href="doc/DOCUMENTATION.org#core-pillars">philosophy</a></b>
+<b><a href="doc/DOCUMENTATION.org#core-pillars">philosophy</a></b> |
+<b><a href="doc/DOCUMENTATION.org#goals">goals</a></b> |
+<b><a href="doc/DOCUMENTATION.org#who-can-benefit-from-this-">for whom?</a></b> |
 
-<b><a href="doc/DOCUMENTATION.org#goals">goals</a></b>
+<b><a href="doc/DOCUMENTATION.org#screenshots">screenshots</a></b> |
 
-<b><a href="doc/DOCUMENTATION.org#who-can-benefit-from-this-">for whom?</a></b>
-
-<b><a href="doc/DOCUMENTATION.org#screenshots">screenshots</a></b>
-
-<b><a href="doc/DOCUMENTATION.org">documentation</a></b>
+<b><a href="doc/DOCUMENTATION.org">documentation</a></b> |
 
 <b><a href="doc/CONTRIBUTE.org">contribute</a></b>
 
