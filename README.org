@@ -1,10 +1,12 @@
 #+HTML: <a name="top"></a>
 
-[[https://gitter.im/syl20bnr/spacemacs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge][file:https://badges.gitter.im/Join%20Chat.svg]] [[https://travis-ci.org/syl20bnr/spacemacs][file:https://travis-ci.org/syl20bnr/spacemacs.svg]] [[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ESFVNPKP4Y742][file:https://img.shields.io/badge/Paypal-Buy%20a%20Drink-blue.svg]] [[http://www.twitter.com/spacemacs][file:https://camo.githubusercontent.com/7cf10772eb6ccebe92d678c452a971e6e2778653/687474703a2f2f692e696d6775722e636f6d2f7458536f5468462e706e67]]
+[[https://gitter.im/syl20bnr/spacemacs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge][file:https://badges.gitter.im/Join%20Chat.svg]] [[https://travis-ci.org/syl20bnr/spacemacs][file:https://travis-ci.org/syl20bnr/spacemacs.svg]] [[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ESFVNPKP4Y742][file:https://img.shields.io/badge/Paypal-Buy%20a%20Drink-blue.svg]]
+
+[[http://www.twitter.com/spacemacs][Twitter]]
 
 --------------
 
-#+BEGIN_HTML
+@@html:
 ***
 <p align="center"><img src="/doc/img/title2.png" alt="Spacemacs"/></p>
 <p align="center">
@@ -25,7 +27,7 @@
 <b><a href="#faq">FAQ</a></b>
 </p>
 ***
-#+END_HTML
+@@
 **Quick Install:**
 
     git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
