@@ -5,8 +5,10 @@
 [[http://www.twitter.com/spacemacs][Twitter]]
 
 --------------
-#+ATTR_HTML: :alt Spacemacs
-[[file:/doc/img/title2.png]]
+
+#+BEGIN_HTML
+<p align="center"><img src="/doc/img/title2.png" alt="Spacemacs"/></p>
+<p align="center">
 <b><a href="doc/DOCUMENTATION.org#core-pillars">philosophy</a></b>
 |
 <b><a href="doc/DOCUMENTATION.org#goals">goals</a></b>
