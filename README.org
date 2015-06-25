@@ -10,74 +10,63 @@
 <b><a href="doc/DOCUMENTATION.org#core-pillars">philosophy</a></b> |
 <b><a href="doc/DOCUMENTATION.org#goals">goals</a></b> |
 <b><a href="doc/DOCUMENTATION.org#who-can-benefit-from-this-">for whom?</a></b> |
-
 <b><a href="doc/DOCUMENTATION.org#screenshots">screenshots</a></b> |
-
 <b><a href="doc/DOCUMENTATION.org">documentation</a></b> |
-
-<b><a href="doc/CONTRIBUTE.org">contribute</a></b>
-
-<b><a href="doc/DOCUMENTATION.org#achievements">achievements</a></b>
-
+<b><a href="doc/CONTRIBUTE.org">contribute</a></b> |
+<b><a href="doc/DOCUMENTATION.org#achievements">achievements</a></b> |
 <b><a href="#faq">FAQ</a></b>
 </p>
 #+END_HTML
-**Quick Install:**
+
+* Quick Install
+
+#+begin_src sh
 
     git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc/generate-toc again -->
-**Table of Contents**
+#+end_src
 
-- [Introduction](#introduction)
-- [Features](#features)
-    - [Batteries Included](#batteries-included)
-    - [Nice UI](#nice-ui)
-    - [Excellent ergonomics](#excellent-ergonomics)
-    - [Convenient and Mnemonic Key Bindings](#convenient-and-mnemonic-key-bindings)
-        - [Great](#great-documentation) [Documentation][DOCUMENTATION.org]
-- [Prerequisites](#prerequisites)
-    - [Emacs](#emacs)
-        - [Linux distros](#linux-distros)
-        - [OS X](#os-x)
-        - [Windows](#windows)
-- [Install](#install)
-    - [Spacemacs logo](#spacemacs-logo)
-- [Update](#update)
-    - [Update notification](#update-notification)
-    - [Rollback](#rollback)
-- [Configuration](#configuration)
-    - [Configuration layers](#configuration-layers)
-    - [Dotfile (.spacemacs)](#dotfile-spacemacs)
-- [Learning Spacemacs](#learning-spacemacs)
-    - [Editing Styles](#editing-styles)
-    - [The leader keys](#the-leader-keys)
-    - [Evil-tutor](#evil-tutor)
-    - [Universal argument](#universal-argument)
-    - [Configuration layers and Package discovery](#configuration-layers-and-package-discovery)
-    - [Key bindings discovery](#key-bindings-discovery)
-    - [Describe functions](#describe-functions)
-- [How-To's](#how-tos)
-- [Contributions](#contributions)
-- [License](#license)
-- [Special Credits](#special-credits)
-- [Supporting Spacemacs](#supporting-spacemacs)
-- [FAQ](#faq)
-    - [Common](#common)
-    - [Windows](#windows)
-    - [OS X](#os-x)
+* Table of Contents                                                   :TOC@4:
+ - [[#quick-install][Quick Install]]
+ - [[#introduction][Introduction]]
+ - [[#features][Features]]
+     - [[#batteries-included][Batteries Included]]
+     - [[#nice-ui][Nice UI]]
+     - [[#excellent-ergonomics][Excellent ergonomics]]
+     - [[#convenient-and-mnemonic-key-bindings][Convenient and Mnemonic Key Bindings]]
+ - [[#prerequisites][Prerequisites]]
+     - [[#emacs][Emacs]]
+ - [[#install][Install]]
+     - [[#spacemacs-logo][Spacemacs logo]]
+ - [[#update][Update]]
+     - [[#update-notification][Update notification]]
+     - [[#rollback][Rollback]]
+ - [[#configuration][Configuration]]
+     - [[#configuration-layers][Configuration layers]]
+     - [[#dotfile-spacemacs][Dotfile (.spacemacs)]]
+ - [[#learning-spacemacs][Learning Spacemacs]]
+     - [[#editing-styles][Editing Styles]]
+     - [[#the-leader-keys][The leader keys]]
+     - [[#evil-tutor][Evil-tutor]]
+     - [[#universal-argument][Universal argument]]
+     - [[#configuration-layers-and-package-discovery][Configuration layers and Package discovery]]
+     - [[#key-bindings-discovery][Key bindings discovery]]
+     - [[#describe-functions][Describe functions]]
+ - [[#how-tos][How-To's]]
+ - [[#contributions][Contributions]]
+ - [[#license][License]]
+ - [[#special-credits][Special Credits]]
+ - [[#supporting-spacemacs][Supporting Spacemacs]]
+ - [[#faq][FAQ]]
+     - [[#common][Common]]
+     - [[#windows][Windows]]
+     - [[#os-x][OS X]]
 
-<!-- markdown-toc end -->
+* Introduction
 
-# Introduction
+- You are a Vim user ? :: You do not need to know Emacs to use Spacemacs!
 
-_You are a Vim user ?_
-
-You do not need to know Emacs to use Spacemacs!
-
-_You are an Emacs user ?_
-
-You do not need to know Vim to use Spacemacs!
+- You are an Emacs user ? :: You do not need to know Vim to use Spacemacs!
 
 Since version 0.101.0 and later Spacemacs totally abolishes the frontiers
 between Vim and Emacs. The user can now choose his/her preferred editing
@@ -101,9 +90,9 @@ customized system and carefully curated, tightly integrated, set of packages.
 
 Spacemacs is currently in beta, and contributions are very welcome.
 
-# Features
+* Features
 
-## Batteries Included
+** Batteries Included
 
 Spacemacs integrates hundreds of ready-to-use packages thanks to a
 community-driven approach.
@@ -113,13 +102,13 @@ of rules gathered in [CONVENTIONS.org][].
 
 **[Visit the Documentation][DOCUMENTATION.org]**
 
-## Nice UI
+** Nice UI
 
 Spacemacs looks good. It ships with quality themes and a beautiful mode-line.
 
 ![spacemacs_python](doc/img/spacemacs-python.png)
 
-## Excellent ergonomics
+** Excellent ergonomics
 
 Spacemacs is designed around the [Evil Mode][] and a leader key. All the
 packages are customized to integrate seamlessly with Evil.
@@ -128,13 +117,13 @@ Spacemacs also define micro-states to group related commands. These
 micro-states reduce the keystrokes needed to issue repetitive commands and
 reduce the number of keyboard bindings to learn.
 
-## Convenient and Mnemonic Key Bindings
+** Convenient and Mnemonic Key Bindings
 
 `Spacemacs` organizes key bindings into mnemonic groups. For example, commands
 to operate on the buffer are prefixed by `<SPC> b`, and commands to operate on
 the project are under `<SPC> p`.
 
-### Great [Documentation][DOCUMENTATION.org]
+#** Great [Documentation][DOCUMENTATION.org]
 
 Most of Spacemacs' features, key bindings, and configuration options
 are extensively documented.
@@ -145,9 +134,9 @@ community will help you out.
 If you prefer IRC, connect to the [Gitter Chat IRC server][] and join the
 `#syl20bnr/spacemacs` channel.
 
-# Prerequisites
+* Prerequisites
 
-## Emacs
+** Emacs
 
 `Spacemacs` is tested with Emacs 24.3 and 24.4 and therefore should boot
 on all the major OSes where these versions are installable.
@@ -155,11 +144,11 @@ on all the major OSes where these versions are installable.
 Some modes require third-party tools that you'll have to install via your
 favorite package manager.
 
-### Linux distros
+#** Linux distros
 
 Install Emacs from the package manager of your favorite Linux distribution.
 
-### OS X
+#** OS X
 
 The recommended version for OS X is [emacs-mac-port][]. It can be installed
 via [homebrew][] with the following commands:
@@ -181,7 +170,7 @@ Note that the `emacs-mac-port` server behaves differently than the regular
 Emacs server.
 Details can be found on the emacs-mac-port [README][emacs-mac-port-server].
 
-### Windows
+#** Windows
 
 Good quality builds can be found [on this page][emacs-for-windows]. It is
 recommended to install the most stable build.
@@ -207,7 +196,7 @@ Source: [Stackoverflow][so-server-unsafe]
 For efficient searches we recommend to install `pt` [the platinum searcher][].
 `pt` version 1.7.7 or higher is required.
 
-# Install
+* Install
 
 1. If you have an existing Emacs configuration, back it up:
 
@@ -232,7 +221,7 @@ For efficient searches we recommend to install `pt` [the platinum searcher][].
 If the mode-line turns red then be sure to visit the [troubleshooting][troubleshoot]
 guide and consult the [FAQ](#faq).
 
-## Spacemacs logo
+** Spacemacs logo
 
 If you are using Ubuntu and Unity then you can add the Spacemacs logo by
 following the instructions [here][cpaulik-unity-icon].
@@ -244,7 +233,7 @@ You can paste this into the app bundle to get the spacemacs logo on your emacs.
 [More detailed instructions](http://www.idownloadblog.com/2014/07/16/how-to-change-app-icon-mac/)
 if you've not done this before.
 
-# Update
+* Update
 
 Spacemacs currently requires manual updates using the following procedure:
 
@@ -260,7 +249,7 @@ the starting page.
 
 3. Restart Emacs to complete the upgrade.
 
-## Update notification
+** Update notification
 
 For convenience an indicator is displayed in the mode-line whenever a new
 version of `Spacemacs` is available.
@@ -274,7 +263,7 @@ version of `Spacemacs` is available.
 **Note:**
 A feature allowing update by merely clicking on the indicator will be implemented _soon_!
 
-## Rollback
+** Rollback
 
 Should anything go wrong during an update, you can rollback ELPA packages to a
 previous version. Click (press `RET`) on the `[Rollback]` link of the startup
@@ -284,7 +273,7 @@ Rollback slot names are dates with the following format `YYYY-MM-DD_HH.MM.SS`.
 The date corresponds to the date of an update. The most recent slots are
 listed first.
 
-# Configuration
+* Configuration
 
 `Spacemacs` divides its configuration into self-contained units called
 [configuration layers][config]. These layers are stacked on top of each other
@@ -293,7 +282,7 @@ to achieve a custom configuration.
 `Spacemacs` uses the dotfile `~/.spacemacs` to control which layers to
 load. Within this file you may also generally configure certain features.
 
-## Configuration layers
+** Configuration layers
 
 A configuration layer is a directory containing at least the following files:
 
@@ -315,7 +304,7 @@ Any configuration layers you create must be explicitly loaded in `~/.spacemacs`.
 under source control. See the documentation for a discussion on how to
 [manage your private configuration][manage_config].
 
-## Dotfile (.spacemacs)
+** Dotfile (.spacemacs)
 
 As mentioned `.spacemacs` controls which configuration layers to load and
 is also a means to customizing `Spacemacs`.
@@ -355,15 +344,15 @@ The [comments in this file][dotfile template] contain further information about
 how to customize `Spacemacs`. See the [dotfile configuration][dotfile] section of
 the documentation for more details.
 
-# Learning Spacemacs
+* Learning Spacemacs
 
-## Editing Styles
+** Editing Styles
 
 Spacemacs can be used by Vim users or Emacs users by setting the
 `dotspacemacs-editing-style` variable to `'vim` or `'emacs` in the dotfile
 `~/.spacemacs`.
 
-## The leader keys
+** The leader keys
 
 `Spacemacs` key bindings use a leader key which is by default bound to
 <kbd>SPC</kbd> (space bar) in `vim` editing style and <kbd>M-m</kbd> in
@@ -380,18 +369,18 @@ There is secondary leader key called the major-mode leader key which is
 set to <kbd>,</kbd> by default. This key is a shortcut for <kbd>SPC m</kbd>
 where all the major-mode specific commands are bound.
 
-## Evil-tutor
+** Evil-tutor
 
 If you are willing to learn the Vim key bindings (highly recommended since
 you can benefit from them even in `emacs` style), press <kbd>SPC h T</kbd>
 to begin an Evil-adapted Vimtutor.
 
-## Universal argument
+** Universal argument
 
 In `vim` editing style the universal argument defaults to `<SPC> u`
 instead of `C-u` because the latter is used to scroll up as in Vim.
 
-## Configuration layers and Package discovery
+** Configuration layers and Package discovery
 
 By using `helm-spacemacs` with <kbd>SPC f e h</kbd> you can quickly search
 for a package and get the name of the layers using it.
@@ -399,7 +388,7 @@ for a package and get the name of the layers using it.
 You can also easily go to the `README.org` of a layer or go to the initialization
 function of a package.
 
-## Key bindings discovery
+** Key bindings discovery
 
 Thanks to [guide-key][], whenever a prefix command is pressed (like `SPC`)
 a buffer appears after one second listing the possible keys for this prefix.
@@ -415,7 +404,7 @@ type a pattern like this regular expression:
 
 which would list all `buffer` related bindings.
 
-## Describe functions
+** Describe functions
 
 `Describe functions` are powerful Emacs introspection commands to get information
 about functions, variables, modes etc. These commands are bound thusly:
@@ -427,11 +416,11 @@ Key Binding   |                 Description
 `<SPC> h d m` | describe-mode
 `<SPC> h d v` | describe-variable
 
-# How-To's
+* How-To's
 
 Some quick `how-to's` are compiled in the [HOWTOs.org][] file.
 
-# Contributions
+* Contributions
 
 `Spacemacs` needs _you_!
 
@@ -442,19 +431,19 @@ If you are ready to contribute please begin by consulting the
 [contribution guidelines][CONTRIBUTE.org] and [conventions][CONVENTIONS.md],
 thanks!
 
-# License
+* License
 
 The license is GPLv3 for all parts specific to `Spacemacs`, this includes:
 - the initialization and core files
 - all the layer files.
 - the documentation
 
-# Special Credits
+* Special Credits
 
 [Spacemacs logo][] by [Nasser Alshammari][]
 released under a Creative Commons license.
 
-# Supporting Spacemacs
+* Supporting Spacemacs
 
 The best way to support Spacemacs is to contribute to it either by reporting
 bugs, helping the community on the [Gitter Chat][] or sending pull requests.
@@ -464,9 +453,9 @@ maintainer by clicking on the [Paypal badge](#top).
 
 Thank you !
 
-# FAQ
+* FAQ
 
-## Common
+** Common
 
 1. **Which version of Spacemacs am I running ?**
 The version is displayed on the upper right corner of the loading screen.
@@ -499,7 +488,7 @@ Don't launch Spacemacs with `emacs -q -l init.el` command. This command will
 run the hooked function in `after-init-hook` before the evaluation of the
 passed `-l init.el` file.
 
-## Windows
+** Windows
 
 1. **Why do the fonts look crappy on Windows ?**
 You can install [MacType][] on Windows to get very nice looking fonts. It is
@@ -511,7 +500,7 @@ You can follow the instructions [here][Windows Image Support]. Alternatively you
 can download binaries of emacs with image support
 included such as [this one][emacs-for-windows].
 
-## OS X
+** OS X
 
 1. **Why are the powerline colors not correct on OS X ?**
 This is a [known issue][powerline-srgb-issue] as of Emacs 24.4 due to
