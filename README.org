@@ -73,8 +73,8 @@ between Vim and Emacs. The user can now choose his/her preferred editing
 style and enjoy all the Spacemacs features.
 
 Even better, it is possible to dynamically switch between the two
-styles *seamlessly* which makes it possible for programmers with different
-styles to do seat pair programming using the *same* editor.
+styles /seamlessly/ which makes it possible for programmers with different
+styles to do seat pair programming using the /same/ editor.
 
 Since switching between the two styles is so simple, Spacemacs is the perfect
 setup to learn the "other way" or even crazier, to get the best of both
