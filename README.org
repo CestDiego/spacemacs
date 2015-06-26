@@ -97,10 +97,10 @@ Spacemacs is currently in beta, and contributions are very welcome.
 Spacemacs integrates hundreds of ready-to-use packages thanks to a
 community-driven approach.
 
-Those packages are grouped in [layers][] and their configuration follow a set
-of rules gathered in [CONVENTIONS.org][].
+Those packages are grouped in [[file:contrib][layers]] and their configuration follow a set
+of rules gathered in [[file:doc/CONVENTIONS.org][CONVENTIONS]].
 
-**[Visit the Documentation][DOCUMENTATION.org]**
+ *Note:* [[file:doc/DOCUMENTATION.org][Visit the Documentation]].
 
 ** Nice UI
 
@@ -523,7 +523,6 @@ details.
 [project management]: doc/DOCUMENTATION.org#project-management
 [Evil Mode]: doc/DOCUMENTATION.org#evil
 [private]: ./private
-[layers]: ./contrib
 [DOCUMENTATION.org]: doc/DOCUMENTATION.org
 [font section]: doc/DOCUMENTATION.org#font
 [CONTRIBUTE.org]: doc/CONTRIBUTE.org
