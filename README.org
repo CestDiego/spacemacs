@@ -36,6 +36,9 @@
      - [[#convenient-and-mnemonic-key-bindings][Convenient and Mnemonic Key Bindings]]
  - [[#prerequisites][Prerequisites]]
      - [[#emacs][Emacs]]
+         - [[#linux-distros][Linux distros]]
+         - [[#os-x][OS X]]
+         - [[#windows][Windows]]
  - [[#install][Install]]
      - [[#spacemacs-logo][Spacemacs logo]]
  - [[#update][Update]]
@@ -69,21 +72,20 @@
 - You are an Emacs user ? :: You do not need to know Vim to use Spacemacs!
 
 Since version 0.101.0 and later Spacemacs totally abolishes the frontiers
-between Vim and Emacs. The user can now choose his/her preferred editing
-style and enjoy all the Spacemacs features.
+between Vim and Emacs. The user can now choose his/her preferred editing style
+and enjoy all the Spacemacs features.
 
-Even better, it is possible to dynamically switch between the two
-styles /seamlessly/ which makes it possible for programmers with different
-styles to do seat pair programming using the /same/ editor.
+Even better, it is possible to dynamically switch between the two styles
+/seamlessly/ which makes it possible for programmers with different styles to do
+seat pair programming using the /same/ editor.
 
 Since switching between the two styles is so simple, Spacemacs is the perfect
-setup to learn the "other way" or even crazier, to get the best of both
-worlds by developing your own hybrid style.
+setup to learn the "other way" or even crazier, to get the best of both worlds
+by developing your own hybrid style.
 
-Spacemacs is also a user-friendly and well-documented Emacs kit that
-integrates the best Emacs packages out there. It uses [Evil Mode][] to combine
-the ergonomic editing features of Vim and Emacs with the flexibility of a
-lisp powered engine.
+Spacemacs is also a user-friendly and well-documented Emacs kit that integrates
+the best Emacs packages out there. It uses [[file:doc/DOCUMENTATION.org#evil][Evil Mode]] to combine the ergonomic
+editing features of Vim and Emacs with the flexibility of a lisp powered engine.
 
 If you are already an experienced Emacs user, you will appreciate the elegantly
 customized system and carefully curated, tightly integrated, set of packages.
@@ -100,17 +102,17 @@ community-driven approach.
 Those packages are grouped in [[file:contrib][layers]] and their configuration follow a set
 of rules gathered in [[file:doc/CONVENTIONS.org][CONVENTIONS]].
 
- *Note:* [[file:doc/DOCUMENTATION.org][Visit the Documentation]].
+ *[[file:doc/DOCUMENTATION.org][Visit the Documentation]]*.
 
 ** Nice UI
 
 Spacemacs looks good. It ships with quality themes and a beautiful mode-line.
-
-![spacemacs_python](doc/img/spacemacs-python.png)
+#+ATTR_HTML: alt:spacemacs_python
+[[file:doc/img/spacemacs-python.png]]
 
 ** Excellent ergonomics
 
-Spacemacs is designed around the [Evil Mode][] and a leader key. All the
+Spacemacs is designed around the [[file:doc/DOCUMENTATION.org#evil][Evil Mode]][] and a leader key. All the
 packages are customized to integrate seamlessly with Evil.
 
 Spacemacs also define micro-states to group related commands. These
@@ -144,33 +146,33 @@ on all the major OSes where these versions are installable.
 Some modes require third-party tools that you'll have to install via your
 favorite package manager.
 
-#** Linux distros
+*** Linux distros
 
 Install Emacs from the package manager of your favorite Linux distribution.
 
-#** OS X
+*** OS X
 
 The recommended version for OS X is [emacs-mac-port][]. It can be installed
 via [homebrew][] with the following commands:
 
-```sh
-$ brew tap railwaycat/emacsmacport
-$ brew install emacs-mac --with-spacemacs-icon
-```
+#+BEGIN_SRC sh
+  $ brew tap railwaycat/emacsmacport
+  $ brew install emacs-mac --with-spacemacs-icon
+#+END_SRC
 (The `with-spacemacs-icon` option uses the official spacemacs logo for the app bundle.)
 
 The default key handling is different from the official OS X port. To correct
 this you can add the [osx layer][] to your [dotfile][] layer list:
 
-```elisp
-(setq-default dotspacemacs-configuration-layers '(osx))
-```
+#+BEGIN_SRC emacs-lisp
+  (setq-default dotspacemacs-configuration-layers '(osx))
+#+END_SRC
 
 Note that the `emacs-mac-port` server behaves differently than the regular
 Emacs server.
 Details can be found on the emacs-mac-port [README][emacs-mac-port-server].
 
-#** Windows
+*** Windows
 
 Good quality builds can be found [on this page][emacs-for-windows]. It is
 recommended to install the most stable build.
@@ -181,9 +183,9 @@ in this directory.
 
 Sometimes you'll get the following error when you first start Emacs:
 
-```
+#+END_SRC
 The directory ~/.emacs.d/server is unsafe
-```
+#+END_SRC
 
 To fix it change the owner of the directory `~/.emacs.d/server`:
   - from Properties select the Tab “Security”,
@@ -200,16 +202,16 @@ For efficient searches we recommend to install `pt` [the platinum searcher][].
 
 1. If you have an existing Emacs configuration, back it up:
 
-   ```sh
-   cd ~
-   mv .emacs.d .emacs.bak
-   ```
+   #+BEGIN_SRC sh
+     cd ~
+     mv .emacs.d .emacs.bak
+   #+END_SRC
 
 2. Clone this repository *with its submodules* :
 
-   ```sh
-   git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
-   ```
+   #+BEGIN_SRC sh
+     git clone --recursive https://github.com/syl20bnr/spacemacs ~/.emacs.d
+   #+END_SRC
 
    `master` is the stable branch and is regularly updated. Switch to the `develop`
    branch if you want to use the bleeding-edge version.
@@ -242,10 +244,10 @@ the starting page.
 
 2. Close Emacs and update the git repository:
 
-   ```sh
+   #+BEGIN_SRC sh
    git pull --rebase
    git submodule sync; git submodule update
-   ```
+   #+END_SRC
 
 3. Restart Emacs to complete the upgrade.
 
@@ -254,11 +256,11 @@ the starting page.
 For convenience an indicator is displayed in the mode-line whenever a new
 version of `Spacemacs` is available.
 
-           Symbol                     | Description
-:------------------------------------:|----------------------------------
-![git-new](doc/img/update-green.png)  | < 3 releases behind
-![git-del](doc/img/update-orange.png) | < 5 releases behind
-![git-mod](doc/img/update-red.png)    | >= 5  releases behind
+| Symbol                    | Description           |
+|---------------------------+-----------------------|
+| [[doc/img/update-green.png]]  | < 3 releases behind   |
+| [[doc/img/update-orange.png]] | < 5 releases behind   |
+| [[doc/img/update-red.png]]    | >= 5  releases behind |
 
 **Note:**
 A feature allowing update by merely clicking on the indicator will be implemented *soon*!
@@ -320,22 +322,22 @@ The following command will create a `.spacemacs` file in your home directory:
 ...to load some configuration layers using the variable
 `dotspacemacs-configuration-layers`:
 
-```elisp
+#+BEGIN_SRC emacs-lisp
 ;; List of configuration layers to load.
 dotspacemacs-configuration-layers '(auto-completion smex)
-```
+#+END_SRC
 
 Some configuration layers support configuration variables to expose granular
 control over layer-specific features, [git layer][] being one such example.
 Variables can be directly set within `dotspacemacs-configuration-layers` like so:
 
-```elisp
+#+BEGIN_SRC emacs-lisp
 ;; List of configuration layers to load.
 dotspacemacs-configuration-layers '(auto-completion
                                     (git :variables
                                          git-magit-status-fullscreen t)
                                     smex)
-```
+#+END_SRC
 
 At anytime you can apply the changes made to the dotfile or layers
 *without restarting* `Spacemacs` by pressing <kbd>SPC f e R</kbd>.
@@ -521,7 +523,7 @@ details.
 [git layer]: contrib/git
 [ace-jump]: doc/DOCUMENTATION.org#vim-motions-with-ace-jump-mode
 [project management]: doc/DOCUMENTATION.org#project-management
-[Evil Mode]: doc/DOCUMENTATION.org#evil
+[[file:doc/DOCUMENTATION.org#evil][Evil Mode]]: doc/DOCUMENTATION.org#evil
 [private]: ./private
 [DOCUMENTATION.org]: doc/DOCUMENTATION.org
 [font section]: doc/DOCUMENTATION.org#font
