@@ -192,7 +192,6 @@ layer directory."
                        "this layer already exists.") name))
      (t
       (make-directory layer-dir t)
-      (configuration-layer//copy-template name "extensions" layer-dir)
       (configuration-layer//copy-template name "packages" layer-dir)
       (message "Configuration layer \"%s\" successfully created." name)))))
 
