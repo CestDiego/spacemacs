@@ -30,6 +30,8 @@ Layer for [[http://www.emacswiki.org/emacs/ERC][ERC IRC chat]].
   credentials and use erc-tls to connect ( ~SPC a i E~ ).
 - Completion of Emojis using [[https://github.com/dunn/company-emoji][company-emoji]] (still needs a way of showing, either
   using the =emoji= layer or having a proper font) :clap:
+- Show tweets description using erc-tweet package. (you can configure how the
+  tweet is shown). (default configuration uses *w3m* it's not required though)
 
 * Install
 

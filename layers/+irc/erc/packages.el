@@ -24,6 +24,7 @@
         erc-image
         erc-social-graph
         erc-view-log
+        erc-tweet
         erc-yt
         ))
 
@@ -125,6 +126,25 @@
       (setq erc-social-graph-dynamic-graph t)
       (evil-leader/set-key-for-mode 'erc-mode
         "mD" 'erc-social-graph-draw))))
+
+(defun erc/init-erc-tweet ()
+  (use-package erc-tweet
+    :init
+    (eval-after-load 'erc '(add-to-list 'erc-modules 'tweet))
+    :config
+    (defun erc-tweet-w3m-cleanup-text (tweet-text)
+      (if (featurep 'w3m)
+          (with-temp-buffer
+            (insert tweet-text)
+            (w3m-region (point-min) (point-max) nil 'utf8)
+            (concat (replace-regexp-in-string
+                     "\n" ""
+                     (buffer-substring-no-properties
+                      (point-min) (point-max)))
+                    "\n"))
+        (erc-tweet-strip-tags tweet-text)))
+    (setq erc-tweet-cleanup-text 'erc-tweet-w3m-cleanup-text)
+    ))
 
 (defun erc/init-erc-yt ()
   (use-package erc-yt
