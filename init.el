@@ -14,6 +14,9 @@
 ;; (package-initialize)
 
 (setq gc-cons-threshold 100000000)
+
+
+fsdfs
 (defconst spacemacs-version          "0.105.0" "Spacemacs version.")
 (defconst spacemacs-emacs-min-version   "24.3" "Minimal version of Emacs.")
 
